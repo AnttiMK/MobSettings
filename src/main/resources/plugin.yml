@@ -1,0 +1,7 @@
+name: MobSettings
+version: '${version}'
+main: dev.kopo.mobsettings.MobSettings
+api-version: '1.20'
+commands:
+  mobsettings:
+    permission: pvprealm.admin
