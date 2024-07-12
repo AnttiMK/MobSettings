@@ -11,7 +11,7 @@ import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
-import org.bukkit.craftbukkit.v1_20_R1.CraftWorld;
+import org.bukkit.craftbukkit.CraftWorld;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.SpawnCategory;
 import org.jetbrains.annotations.NotNull;
@@ -334,7 +334,7 @@ public class MobSettingsCommand implements TabExecutor {
                         }
                         return Arrays.stream(MobCategory.values())
                                 .map(cat -> cat.name().toLowerCase())
-                                .filter(s -> s.startsWith(args[3].toLowerCase()))
+                                .filter(s -> s.startsWith(args[2].toLowerCase()))
                                 .toList();
                     } else if (args[1].equalsIgnoreCase("mobspawnrange")) {
                         if (args.length >= 4) {
